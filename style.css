@@ -1,106 +1,147 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* navbar */
 .navbar {
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    background-color: cadetblue;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 30px 60px;
-    gap: 80px;
-    z-index: 1000px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 60px;
+  gap: 80px;
+  z-index: 1000;
+  border: 2px double brown;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: red;
-    font-weight: 400;
-    padding: 6px 14px;
-    border-radius: 20px;
+  text-decoration: none;
+  color: red;
+  font-weight: 400;
+  padding: 6px 14px;
+  border-radius: 20px;
 }
 
 .nav-links a:hover {
-    background-color:azure;
-    color: red;
+  background-color: azure;
+  color: red;
 }
 
-.princi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 60px;
-  }
+/* fondo principal */
+.fondo {
+  background-image: url(img/fondoazul.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px; 
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* foto */
+.foto {
+  width: 250px;
+  height: 250px;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0px 90px 60px;
+  padding: 10px;
+  border: 5px double aqua;
+
+}
+
+/* descripción */
+.descrip {
+  width: 300px;
+  height: auto;
+  background-color: brown;
+  padding: 15px 20px 12px 30px;
+  margin: 40px 0px 0px 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 5px solid aqua;
+}
+
+.descrip-text {
+  font-size: 12px;
+  color: white;
+}
+
+.descrip-text ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.descrip-text h2 {
+  color: aqua;
+  margin-top: 15px;
+  margin-bottom: 5px;
   
-  .princi-text {
-    max-width: 100%;
-    padding-left: 20px;
-  }
-  
-  .princi-text h1 {
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 15px;
-  }
-  
-  .princi-text p {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-  }
+}
 
-  .foto {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 100px;
-    padding-right: 200px;
-    padding-bottom: 25px;
-    padding-left: 70px;
-    
-  }
+/* exp */
+.exp {
+  width: 300px;
+  height: auto;
+  background-color: aqua;
+  padding: 15px 20px 20px 30px;
+  margin: 40px 0px 0px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid red;
+}
 
-  .fondo {
-   background-image: url(img/atardecer.jpg);
-   background-size: 100% 100%;
-   height: 500px;
-    
-  }
+.exp-text {
+  font-size: 12px;
+}
 
-  .final {
-    width: 100%;
-    height: 105px;
-    background-color: cadetblue;
+.exp-text h2 {
+  color: red;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 
-  }
+.exp-text p {
+  margin-bottom: 20px;
+}
 
-  .final-text {
-    padding: 20px 30px 30px 30px
-  }
+.exp-text ul {
+ margin-left: 3px;
+}
 
-  .descrip {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 100px;
 
-   
-   
-  }
 
- 
+/* footer */
+.final {
+  width: 100%;
+  height: 105px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-text {
+  font-size: 18px;
+  padding: 20px 30px;
+  text-align: center;
+}
