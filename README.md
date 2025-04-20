@@ -1,2 +1,2 @@
 # OrtegaTiago-TT-Compu3
-En esta primera parte quise hacer algo simple, un menu en el header con un inicio y informacion que al apretarlos te llevaria a cada opcion moviendo la pantalla (por ahora no esta puesto) y luego en el main quise poner mi nombre con un hermoso fondo y mi informacion mas una foto mia, y en el footer datos como mi correo direcion y numero de telefono
+Queria lograr algo simple y sencillo colorido, usando mas que nada usando el flex centrado para la mayoria de cosas con un padding y margin para acomodarlas bien y con un proceso de ul mas un li para las listas de mis habilidades con decoracion en los bordes de los cuadrados y un nav para dar inicio a la pagina con el inicio y experiencia.
