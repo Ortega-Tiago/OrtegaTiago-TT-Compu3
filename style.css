@@ -1,147 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Fugaz+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* navbar */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: cadetblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 60px;
-  gap: 80px;
-  z-index: 1000;
-  border: 2px double brown;
+    width: 100%;
+    background: #B3FFFF;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: sticky;
+    position: fixed;
+    z-index: 5;
+    
 }
 
-.nav-links {
+
+.nav-links{
   list-style: none;
   display: flex;
   gap: 25px;
+  
 }
 
-.nav-links a {
+.nav-links a{
+  padding: 15px;
+  background-color: #00154A;
   text-decoration: none;
-  color: red;
-  font-weight: 400;
-  padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: 15%;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 20px;
+  color:white
+  
 }
 
-.nav-links a:hover {
-  background-color: azure;
-  color: red;
-}
+/*main logo*/
 
-/* fondo principal */
-.fondo {
-  background-image: url(img/fondoazul.jpg);
+.fondologo {
+  background-image: url(img/fondologo.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
-  padding-top: 100px; 
-  display: flex;
-  gap: 40px;
-  justify-content: flex-start;
-  align-items: flex-start;
+ 
 }
 
-/* foto */
-.foto {
-  width: 250px;
-  height: 250px;
-  background-color: brown;
+.circulo {
+  height: 380px;
+  width: 380px;
+  background-color: #DA3535;
+  border: 10px solid #B3FFFF;  
+  border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 90px 0px 90px 60px;
-  padding: 10px;
-  border: 5px double aqua;
-
+  justify-content: center;
+  position: relative;
+  left: 440px;
+  top: 120px;
 }
 
-/* descripción */
-.descrip {
-  width: 300px;
-  height: auto;
-  background-color: brown;
-  padding: 15px 20px 12px 30px;
-  margin: 40px 0px 0px 70px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: 5px solid aqua;
-}
-
-.descrip-text {
-  font-size: 12px;
+.circulo h1 {
   color: white;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 10;
+  font-size: 50px;
 }
 
-.descrip-text ul {
+/*main sobre mi*/
+
+.fondomio {
+  background-image: url(img/fondouno.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.foto {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 3%;
+  border: 3px solid #5169A9
+}
+
+.foto img {
+  border-radius: 3%;
+}
+
+.foto-text {
+  padding: 30px;
+}
+
+.foto-text h2 {
+  font-family: "Baloo 2", sans-serif;
+  color: #DA3535;
+  font-size: 50px;
+  position: relative;
+  top: 10px;
+
+}
+
+.foto-text p {
+  font-family: "Poppins", sans-serif;
+  color: #00154A;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/*main experiencia*/
+
+.fondoexp {
+  background-image: url(img/fondodos.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 120vh;
+}
+
+.ladoizquierdo {
+  display: flex;
+  flex-direction: column;
+}
+
+.ladoizquierdo h2 {
+  font-family: "Baloo 2", sans-serif;
+  color: #DA3535;
+  margin-left: 50px;
   margin-top: 10px;
-  margin-bottom: 15px;
-  padding-left: 20px;
-}
+  font-size: 50px;
+ }
 
-.descrip-text h2 {
-  color: aqua;
-  margin-top: 15px;
-  margin-bottom: 5px;
+.virtudes-text{
+  font-family: "Poppins", sans-serif;
+  color: #B3FFFF;
+  margin-right: 700px;
+  margin-left: 50px;
+  font-size: 16px;
+  position: relative; 
+  bottom: 10px;
   
 }
 
-/* exp */
-.exp {
-  width: 300px;
-  height: auto;
-  background-color: aqua;
-  padding: 15px 20px 20px 30px;
-  margin: 40px 0px 0px 70px;
+.programas {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid red;
 }
 
-.exp-text {
-  font-size: 12px;
+.programas img {
+ margin-top: 90px;
+ margin-right: 25px;
+ position: relative;
+ right: 245px;
 }
 
-.exp-text h2 {
-  color: red;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-
-.exp-text p {
-  margin-bottom: 20px;
-}
-
-.exp-text ul {
- margin-left: 3px;
-}
-
-
-
-/* footer */
-.final {
-  width: 100%;
-  height: 105px;
-  background-color: cadetblue;
+.programas aside {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #B3FFFF;
+  font-size: 13px;  
 }
 
-.final-text {
-  font-size: 18px;
-  padding: 20px 30px;
-  text-align: center;
+.programas aside p {
+  margin-right: 27px;
+  position: relative;
+  top: 160px;
+  right: 585px;
+}
+
+.ladoderecho {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  
+}
+
+.ladoderecho h2 {
+  font-family: "Baloo 2", sans-serif;
+  color: #DA3535;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 50px;
 }
