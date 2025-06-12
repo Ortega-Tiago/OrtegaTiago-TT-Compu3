@@ -5,17 +5,6 @@
     <title>Tp3OrtegaTiagoCompu3TT</title>
     <link rel="icon" href="img/iconopincel.png">
     <link href="style.css" rel="stylesheet"/>
-    <script>
-          function cambiarDisplay(visibilidadNueva){
-            document.getElementById("galeria").style.display = visibilidadNueva
-          }
-          function mostrarGaleria(){
-            cambiarDisplay('flex')
-          }
-          function ocultarGaleria(){
-            cambiarDisplay('none')
-          }
-	  </script>
   </head>
   <body>
     <header>
@@ -29,38 +18,30 @@
     </header>
     <body>
         <main>
-            <section class="galeriafondo">
-              <article id="miniaturas" class="flex-galeria">
-                <a href="#foto-1"><img src="img/digitalunomini.jpg" width="200px" height="200px" alt="dibujo-digital-uno" onclick="mostrargaleria()"></a>
-                <a href="#foto-2"><img src="img/digitaldosmini.jpg" width="200px" height="200px" alt="dibujo-digital-dos" onclick="mostrargaleria()"></a>
-                <a href="#foto-3"><img src="img/amanounomini.jpg" width="200px" height="200px"  alt="dibujo-amano-uno" onclick="mostrargaleria()"></a>
-                <a href="#foto-4"><img src="img/amanodosmini.jpg" width="200px" height="200px" alt="dibujo-amano-dos" onclick="mostrargaleria()"></a>
+            <section class="galeria-fondo">
+              <article class="galeria-text">
+                <h2>Galeria</h2>
+                <p>Estos son algunos de mis dibujos creados tanto a mano como en digital, cada uno hecho con paciencia, delicadez y amor por el dibujo</p>
+              </article>
+              <article class="trabajos">
+                <a href="dibujo-diuno.html">
+                  <img src="img/digitaluno.jpg" height="200px" width="200px" alt="dibujo-diuno"/>
+                </a>
+                <a href="dibujo-didos.html">
+                  <img src="img/digitaldos.jpg" height="200px" width="200px" alt="dibujo-didos"/>
+                </a>
+                <a href="dibujo-manouno.html">
+                  <img src="img/manouno.jpg" height="200px" width="200px" alt="dibujo-manouno"/>
+                </a>
+                <a href="dibujo-manodos.html">
+                  <img src="img/manodos.jpg" height="200px" width="200px" alt="dibujo-manodos"/>
+                </a>
               </article>
             </section>
-            <section id="galeria">
-              <div id="fondo-galeria"></div>
-              <ul id="galeria-oculta">
-                <li class="parte-galeria" id="foto-1">
-                  <a href="#" class="primer-ultima-flecha"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
-						      <img class="cerrar" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
-				          <a href="#foto-2"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
-                </li>
-                <li class="parte-galeria" id="foto-2">
-						      <a href="#foto-1"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
-						      <img class="cerrar" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
-						      <a href="#foto-3"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
-				        </li>
-                <li class="parte-galeria" id="foto-3">
-						      <a href="#foto-2"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
-						      <img class="cerrar" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
-						      <a href="#foto-4"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
-                </li>
-                <li class="parte-galeria" id="foto-4">
-						      <a href="#foto-3"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
-						      <img class="close" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
-						      <a href="#" class="primer-ultima-flecha"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
-				        </li>
-              </ul>
+            <section class="videos-fondo">
+              <article>
+                
+              </article>
             </section>
         </main>
     </body>
