@@ -152,8 +152,11 @@
   margin-left: 50px;
   font-size: 16px;
   position: relative; 
-  
-  
+}
+
+.virtudes-text span {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .programas {
@@ -199,9 +202,9 @@
   font-family: "Poppins", sans-serif;
   color: #B3FFFF;
   font-size: 16px;  
-
-
 }
+
+/*footer*/
 
 .footer {
   background: #B3FFFF;
@@ -299,7 +302,7 @@
   color: #B3FFFF;
   font-size: 18px;
   position: relative;
-  top: 88px;
+  top: 92px;
   left: 70px;
 }
 
@@ -326,8 +329,8 @@
 
 .formulario-text2 h6{
  position: relative;
- top: 75px;
- left: 265px;
+ top: 78px;
+ left: 40px;
 }
 
 .formulario-text2 label {
@@ -337,7 +340,7 @@
   padding: 13px;
   position: relative;
   right: 36px;
-  top: 87px;
+  top: 90px;
 }
 
 /*main formulario 3*/
@@ -351,8 +354,8 @@
 
 .formulario-text3 h6 {
  position: relative;
- left: 265px;
- top: 28px;
+ left: 35px;
+ top: 32px;
  
 }
 
@@ -378,7 +381,7 @@
 
 .formulario-text4 h6 {
  position: relative;
- bottom: 235px;
+ bottom: 230px;
  left: 70px;
 }
 
