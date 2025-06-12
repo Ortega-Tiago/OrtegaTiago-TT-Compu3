@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tp3OrtegaTiagoCompu3TT</title>
-    <link rel="icon" href="img/iconopincel.jpg">
+    <link rel="icon" href="img/iconopincel.png">
     <link href="style.css" rel="stylesheet"/>
+    <script>
+          function cambiarDisplay(visibilidadNueva){
+            document.getElementById("galeria").style.display = visibilidadNueva
+          }
+          function mostrarGaleria(){
+            cambiarDisplay('flex')
+          }
+          function ocultarGaleria(){
+            cambiarDisplay('none')
+          }
+	  </script>
   </head>
   <body>
     <header>
@@ -18,6 +29,38 @@
     </header>
     <body>
         <main>
-            <h1>holas buenos dias</h1>
+            <section class="galeriafondo">
+              <article id="miniaturas" class="flex-galeria">
+                <a href="#foto-1"><img src="img/digitalunomini.jpg" width="200px" height="200px" alt="dibujo-digital-uno" onclick="mostrargaleria()"></a>
+                <a href="#foto-2"><img src="img/digitaldosmini.jpg" width="200px" height="200px" alt="dibujo-digital-dos" onclick="mostrargaleria()"></a>
+                <a href="#foto-3"><img src="img/amanounomini.jpg" width="200px" height="200px"  alt="dibujo-amano-uno" onclick="mostrargaleria()"></a>
+                <a href="#foto-4"><img src="img/amanodosmini.jpg" width="200px" height="200px" alt="dibujo-amano-dos" onclick="mostrargaleria()"></a>
+              </article>
+            </section>
+            <section id="galeria">
+              <div id="fondo-galeria"></div>
+              <ul id="galeria-oculta">
+                <li class="parte-galeria" id="foto-1">
+                  <a href="#" class="primer-ultima-flecha"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
+						      <img class="cerrar" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
+				          <a href="#foto-2"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
+                </li>
+                <li class="parte-galeria" id="foto-2">
+						      <a href="#foto-1"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
+						      <img class="cerrar" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
+						      <a href="#foto-3"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
+				        </li>
+                <li class="parte-galeria" id="foto-3">
+						      <a href="#foto-2"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
+						      <img class="cerrar" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
+						      <a href="#foto-4"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
+                </li>
+                <li class="parte-galeria" id="foto-4">
+						      <a href="#foto-3"><img src="img/volver.png" width="50px" height="50px" alt="anterior"></a>
+						      <img class="close" src="img/cerrar.jpg" alt="cerrar" width="50px" height="50px"“onClick=”ocultargalería()”>
+						      <a href="#" class="primer-ultima-flecha"><img src="img/avanzar.jpg" width="50px" height="50px" alt="siguiente"></a>
+				        </li>
+              </ul>
+            </section>
         </main>
     </body>
