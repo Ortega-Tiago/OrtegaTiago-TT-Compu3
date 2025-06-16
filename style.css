@@ -34,8 +34,11 @@
   border-radius: 15%;
   font-family: "Baloo 2", sans-serif;
   font-size: 20px;
-  color:white
-  
+  color:white  
+}
+
+.nav-links a:hover {
+  background-color: #0031AC;
 }
 
 /*main logo*/
@@ -44,7 +47,7 @@
   background-image: url(img/fondologo.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -78,7 +81,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 90vh;
+  min-height: 50vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,6 +123,10 @@
   margin-bottom: 30px;
 }
 
+.foto-text span {
+  font-weight: 600;
+}
+
 /*main experiencia*/
 
 .fondo-exp {
@@ -127,7 +134,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 95vh;
+  min-height: 105vh;
   display: flex;
   justify-content: center;
 }
@@ -135,23 +142,26 @@
 .lado-izquierdo {
   display: flex;
   flex-direction: column;
+  width: 600px;
+  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .lado-izquierdo h2 {
   font-family: "Baloo 2", sans-serif;
   color: #DA3535;
   margin-left: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 50px;
  }
 
 .virtudes-text{
   font-family: "Poppins", sans-serif;
   color: #B3FFFF;
-  margin-right: 500px;
+  display: flex;
+  flex-direction: column;
   margin-left: 50px;
   font-size: 16px;
-  position: relative; 
 }
 
 .virtudes-text span {
@@ -187,16 +197,17 @@
 .lado-derecho {
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: 60px;
   margin-bottom: 40px;
+  margin-right: 50px;
+  padding-left: 100px;
+  width: 600px;
 }
 
 .lado-derecho h2 {
   font-family: "Baloo 2", sans-serif;
   color: #DA3535;
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .lado-derecho-text {
@@ -211,6 +222,7 @@
   background: #B3FFFF;
   width: 100%;
   padding: 5px 5px;
+  min-height: 10px;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -236,7 +248,7 @@
   background-image: url(img/fondouno.jpg);
   background-size: 120% 120%;
   background-repeat: no-repeat;
-  width: 100%;
+  max-width: 100%;
   min-height: 160vh;
   display: flex;
   flex-direction: column;
@@ -421,6 +433,13 @@
   bottom: 85px;
 }
 
+.formulario-text5 input:hover{
+  cursor: pointer;
+  background-color: #0031AC;
+  color: white;
+  border: 1px solid #0031AC; 
+}
+
 /*main nos vemos*/
 
 .fondo-abajo {
@@ -467,8 +486,7 @@
   font-size: 50px;
   position: relative;
   top: 40px;
-  margin-left: 100px;
-  margin-right: 120px;
+  margin-right: 30px;
 }
 
 .galeria-text p {
@@ -477,8 +495,7 @@
   font-size: 16px;
   font-weight:400;
   text-align: center;
-  margin-left: 280px;
-  margin-right: 280px;
+  width: 700px;
   position: relative;
   top: 25px;
 }
@@ -486,9 +503,10 @@
 /*grid en los trabajos*/
 
 .trabajos {
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   margin: 40px auto;
+  
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 20%));
@@ -499,6 +517,7 @@
   border-radius: 5%;
   margin-left: 115px;
 }
+
 
 /*html de los trabajos*/
 
@@ -566,21 +585,21 @@
 }
 
 .videos-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  position: relative;
-  bottom: 30px;
+  padding-bottom: 55px;
 }
 
 .videos-text h2 {
   font-family: "Baloo 2", sans-serif;
   color: #DA3535;
-  margin-left: 500px;
-  margin-right: 500px;
+  width: 400px;
   text-align: center;
   font-size: 50px;
   line-height: 50px;
-  position: relative;
-  bottom: 10px;
 }
 
 .videos-text p {
@@ -589,8 +608,9 @@
   font-size: 16px;
   font-weight:400;
   text-align: center;
-  margin-left: 280px;
-  margin-right: 280px;
+  position: relative;
+  top: 20px;
+  width: 700px;
 }
 
 .video {
