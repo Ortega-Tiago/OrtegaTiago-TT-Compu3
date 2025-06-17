@@ -89,9 +89,7 @@
 }
 
 .foto {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0px 50px 50px;
   padding: 30px;
   padding-left: 50px;
   padding-right: 50px;
@@ -180,14 +178,11 @@
  right: 245px;
 }
 
-.programas aside {
+.programas p {
   display: flex;
   font-family: "Poppins", sans-serif;
   color: #B3FFFF;
   font-size: 13px;  
-}
-
-.programas aside p {
   margin-right: 27px;
   position: relative;
   top: 160px;
@@ -268,9 +263,7 @@
   font-family: "Baloo 2", sans-serif;
   color: #DA3535;
   font-size: 50px;
-  margin-left: 100px;
-  margin-top: 20px;
-  margin-right: 120px;
+  margin-top: 20px; 
 }
 
 .fondo-contacto-text p {
@@ -279,8 +272,7 @@
   font-size: 16px;
   font-weight:400;
   text-align: center;
-  margin-left: 280px;
-  margin-right: 280px;
+  width: 700px;
   position: relative;
   bottom: 10px;
 }
@@ -621,35 +613,112 @@
 }
 
 @media screen and (max-width:600px){
-    body {
-      font-size: 0.75em;
+
+  .nav-links {
+    position: relative;
+    margin-right: 30px;
+  }
+   
+  /*inicio*/
+
+  .circulo {
+    margin-left: 10px;
+  }
+
+  .fondo-mio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto {
+    margin: 50px 50px 10px 50px;
+  }
+
+  .foto-text {
+    position: relative;
+    bottom: 30px;
+    width: 550px;
+  }
+
+  .foto-text p {
+    position: relative;
+    top: 20px;
+  }
+
+  .fondo-exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 
-    header {
-      flex-direction: column;
-    }
+  .lado-izquierdo {
+    text-align: left;
+    width: 550px;
+    margin-bottom: 40px;
+  }
 
-    .nav-links {
-      flex-direction: column;
-    }
+  .programas p {
+    font-size: 15;
+  }
 
-    .navbar {
-      padding: 10px 30px;
-    }
+  .lado-derecho {
+    width: 550px;
+    text-align: left;
+    position: relative;
+    right: 50px;
+  }
 
-    .nav-links a {
-      font-size: 15px;
-      border-radius: 10%;
-      padding: 10px;
-    }
+  /*galeria*/
 
-    .footer-text {
-      font-size: 12px;
-      padding: 5px 5px;
-    }
+  .galeria-text h2 {
+    margin-top: 35px;
+    margin-left: 45px;
+  }
 
-    .footer img {
-      width: 30px;
-      height: 30px;
-    }
+  .galeria-text p {
+    width: 500px;
+  }
+   
+  .trabajos {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 40px;
+  
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 20%));
+    gap: 40px;
+}
+
+ .trabajos img {
+    height: 300px;
+    width: 300px;
+ }
+
+ .videos-fondo {
+    min-height: 160vh;
+ }
+
+ .videos-text {
+  margin-top: 40px;
+ }
+
+ .videos-text p{
+    width: 500px;
+ }
+
+ .video video {
+    width: 500px;
+    position: relative;
+    bottom: 30px;
+ }
+
+ .footer-text {
+  width: 500px;
+ }
 }
