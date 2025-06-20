@@ -615,9 +615,14 @@
 
 @media screen and (max-width:600px){
 
+  .nav-links a{
+  font-size: 18px;
+  
+  }
+
   .nav-links {
-    position: relative;
-    margin-right: 10px;
+    margin-left: 20px;
+    
   }
    
   /*inicio*/
@@ -674,19 +679,22 @@
 
   /*galeria*/
 
+  .galeria-fondo {
+    padding-left: 40px;
+  }
+
   .galeria-text h2 {
     margin-top: 35px;
-    margin-left: 45px;
+    margin-left: 18px;
   }
 
   .galeria-text p {
-    width: 500px;
+    width: 480px;
+    margin-right: 35px;
   }
    
   .trabajos {
     position: relative;
-    left: 40px;
-  
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 10%));
@@ -697,6 +705,7 @@
     height: 300px;
     width: 300px;
  }
+
 
  .videos-fondo {
     min-height: 160vh;
