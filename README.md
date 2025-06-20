@@ -5,6 +5,7 @@ Mi trabajo al principio en VISUAL STUDIO CODE, no sabia por donde empezar pero l
 Llegando al apartado de galería me tope con el mayor problema, perdí tiempo intentando hacerlo sin HTML siendo un gran error, mejor hacer cosas que te salgan dije, entonces cree un HTML para cada imagen, donde me gusto mucho esa parte poner videos míos y fue fácil y rápido
 Llegando a contacto fue lo que mas me tarde, entre usar el CSS y HTML, fue muy difícil porque apenas tocaba algo se movía todo, fue la parte con mas estrés pero logre mi objetivo de replicarlo como lo hice en Figma.
 Luego en media no tomo mucho solo elegí el nav y el footer para ello y les cambio los valores a unos mas pequeños.
+Ahora para mi corrección arregle el media teniendo toda la pestaña de inicio y galaria con ello mas el nav y el footer, cerre las etiquetas que faltaban, limpie un poco mas mi codigo y añadi la pseudoclases.
 
 Tamaño de pantalla: 1280x720 siempre usando 100% en la Web
 Editor de código: Visual Studio Code
